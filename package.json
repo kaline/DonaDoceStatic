@@ -1,7 +1,7 @@
 {
   "name": "donadocecss",
   "version": "1.0.0",
-  "description": "",
+  "description": "<hr>\r <img src=\"imagens/Cartao.jpg\">",
   "main": "app.js",
   "dependencies": {
     "body-parser": "^1.18.3",
@@ -12,12 +12,16 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start":"node app.js",
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
     "node": "12.13.0"
   },
   "author": "kaline",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": https://github.com/kaline/DonaDoceStatic"
+  }
 }
