@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contato - Dona Doce</title>
+        <link rel="stylesheet" href="reset.css">
+        <link  rel="stylesheet" href="produtos.css">
+        <link rel="stylesheet" href="contato.css">
+        
+    </head>
+    <body>
+        <header class="tituloPrimeiro">
+            <div class="caixa">
+                <h1><img id="logo" src="imagens/logo.png" alt="Logo da Dona Doce"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li>    
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="contatoList">
+            <form class="contatoForm" action="http://localhost:3000/submit" method="POST">
+                    <label for="nome">Nome</label>
+                    <input type="nome" name="nome" id="nome" class="input-padrao"  required placeholder="Clarice Lispector">
+                
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" class="input-padrao" required placeholder="userId@dominio.com">
+                
+                    <label for="telefone">Telefone</label>
+                    <input type="telefone" name="telefone" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+                    <label for="mensagem">Mensagem</label>
+                    <textarea cols="70" rows="20" type="mensagem" name="mensagem" id="mensagem" class="input-padrao"></textarea>
+                    <fieldset>
+
+                        <legend class="text">Como podemos te contatar?</legend>
+                        
+                        
+                        <label for="radio-email" >
+                            <input type="radio" name="opcaoContato" id="radioemail" value="email" checked>
+                            Email
+                        </label>
+    
+                        <label for="radio-telefone">
+                            <input type="radio"  name="opcaoContato" id="radio-telefone"  value="telefone">
+                            Telefone
+                        </label>
+    
+                        <label for="radio-whatsApp">
+                            <input type="radio"  name="opcaoContato" id="radio-whatsApp"  value="whatsApp">
+                            WhatsApp
+                        </label>
+
+                    </fieldset>
+        
+                    <fieldset class="entrega">
+                        <legend class="text">Qual o horário da entrega?</legend>
+                        <select class="lista" name="horarioEntrega">
+                            <option>Manhã</option>
+                            <option>Tarde</option>
+                            <option>Noite</option>
+                        </select>
+                    </fieldset>
+                    
+                    <label class="checkbox"><input class="inputCheck" type="checkbox" name="EmailResposta" checked>Gostaria de receber atualizações por email?</label>
+                   
+
+                    <input type="submit" href="http://localhost:3000" value="Enviar formulário" class="enviar">
+            </form>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <td>Dia</td>
+                        <td>Horário</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda</td>
+                        <td>7h ~ 21h</td>
+                    </tr>
+                    <tr>
+                        <td>Terça</td>
+                        <td>7h ~ 21h</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta</td>
+                        <td>7h ~ 21h</td>
+                    </tr>
+                    <tr>
+                        <td>Quinta</td>
+                        <td>7h ~ 21h</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td>7h ~ 21h</td>
+                    </tr>
+                    <tr>
+                        <td>Sábado</td>
+                        <td>7h ~ 21h</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    
+                </tfoot>
+                
+            </table>
+           
+        </main>
+        <footer>
+            <section>
+                <A id="email" HREF="mailto:donadocedelivery@gmail.com"></A>
+                <A id="whatsapp" HREF="https://api.whatsapp.com/send?phone=+55(85)99840-4443"></A>
+                <A id="instagram" HREF="https://www.instagram.com/donadoce.br/"></A>
+            </section>
+            <section>
+                <img width="250px" height="250px" src="imagens/logo.png" alt="Logo da Dona Doce">
+                <p class="copyright">&copy; Copyright Dona Doce - 2020</p>
+            </section>
+           
+        </footer>
+    </body>
+</html>

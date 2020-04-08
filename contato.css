@@ -1,0 +1,93 @@
+.contatoList{
+    width:940px;
+    margin:0 auto;
+}
+.contatoForm{
+    margin:40px 0;
+}
+.entrega{
+    margin: 20px 0 0 0;
+}
+
+.lista{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+form label, .text{
+    display: block;
+    font-size: 20px;
+    margin: 20px 0 0 10px;
+}
+.input-padrao{
+    display: block;
+    margin: 0 0 40px 0;
+    padding: 10px 25px;
+    width: 50%;
+}
+.checkbox{
+    margin: 50px 0;
+}
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    background-color:lightpink;
+    color: gray;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 1px;
+    transition: 2s all;
+    cursor: pointer;
+
+}
+.enviar:hover{
+    background-color:lightyellow;
+    transform: scale(1.2);
+}
+table{
+    margin: 20px 0 40px;
+}
+thead td{
+    background-color: lightgray;
+    font-weight: bold;  
+}
+tbody{
+    background-color: lavender;
+}
+tr td{
+    border: 4px solid black;
+    padding: 16px 30px;
+}
+#email{
+    text-decoration: none;
+    color: white;
+    margin: 0 50px 0 0;
+}
+
+#email:before{
+    content: url('https://api.iconify.design/logos:google-gmail.svg?height=16');
+    vertical-align: -0.125em;
+    margin: 0 3px 0 0;
+
+}
+
+#whatsapp{
+    text-decoration:none;
+    color: white;
+    margin: 0 50px 0 0;
+}
+#whatsapp:before{
+    content: url('https://api.iconify.design/logos:whatsapp.svg?height=18');
+    vertical-align: -0.125em;
+    margin: 0 3px 0 0;
+}
+
+#instagram{
+    text-decoration: none;
+    color: white;
+}
+#instagram::before{
+    content: url('https://api.iconify.design/openmoji:instagram.svg?height=24');
+    vertical-align: -0.325em;
+}

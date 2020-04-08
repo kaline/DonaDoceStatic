@@ -1,0 +1,149 @@
+
+.TituloPrincipal{
+    background-color:white;
+    border-style:outset;
+    font-style: italic;
+
+}
+
+.TituloSobre{
+    text-align: center;
+    background-color: white;
+    font-style: italic;
+    font-size: 25px;
+    margin:40px 0 0 0;
+
+}
+
+.texto{
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    margin: 20px 0 0 0;
+
+}
+#missão{
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    color: rgb(37, 20, 20); 
+    margin: 0mm;
+
+}
+.banner{
+    /* width: 100%; */
+    width: 19.5%;
+    border-width:0; 
+    margin: 0mm;   
+   
+}
+.banner:hover{
+    border:outset rgb(196, 187, 195);
+}
+
+.conteudo-beneficios{
+    background-color: white;
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    margin: 20px 10px 20px 10px;
+
+    
+}
+
+.itens{
+    background-color: white;
+    padding: 10px 0;
+    line-height: 1.5;
+}
+.itens:before{
+    content: "✦";
+
+}
+.itens:nth-last-child(2){
+    font-weight: bold;
+}
+#tituloinf{
+
+    text-align: center;
+    background-color:white;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 40px 0 10px 0;
+    clear: left;
+
+
+}
+nav{
+    position: center;
+    
+
+}
+nav li{ 
+    display: inline;
+    margin: 0 0 0 100px;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+}
+nav a:hover{
+    font-size:20px;
+    color: rosybrown;
+}
+
+nav a:active{
+    color: yellow;
+}
+
+.doces{
+    width: calc(40% - (150px*2));
+    position:absolute;
+    margin:50px 0 0 850px;
+    opacity: 0.6;
+    transition: 1s opacity;
+    box-shadow: 10px 10px 10px black, 10px 10px 10px lightpink;
+}
+.doces:hover{
+    opacity: 1;
+}
+body{
+    font-family: 'Courgette', cursive;
+    margin: 0 10px 0 0;
+}
+.mapa{
+    text-align: center;
+    background:linear-gradient(150deg,white,pink,rgb(34, 30, 30));
+}
+.mapa p{
+    text-align: center;
+    margin: 20px; 
+
+}
+.video{
+    text-align: center;
+    margin: 100px 0 100px 100px;
+}
+
+@media screen and(max-width:480px){
+    .conteudo-beneficios, .doces, .mapa,.video{
+        width: auto;
+       
+    }
+    h1 {
+		text-align: center;
+	}
+
+	nav {
+		position: static;
+    }
+    
+    .lista-beneficios, .doces{
+        width: 100%;
+    }
+
+}
