@@ -1,5 +1,5 @@
 {
-  "name": "DonaDoceStatic",
+  "name": "donadocestatic",
   "version": "1.0.0",
   "description": "<hr>\r <img src=\"imagens/Cartao.jpg\">",
   "main": "app.js",
@@ -8,18 +8,21 @@
     "consolidate": "^0.15.1",
     "ejs": "^3.0.2",
     "express": "^4.16.3",
+    "pug": "^2.0.3"
   },
   "devDependencies": {},
   "scripts": {
     "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "engines": {
-    "node": "12.13.0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaline/DonaDoceStatic.git"
   },
   "author": "kaline",
   "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/kaline/DonaDoceStatic"
-  }
+  "bugs": {
+    "url": "https://github.com/kaline/DonaDoceStatic/issues"
+  },
+  "homepage": "https://github.com/kaline/DonaDoceStatic#readme"
 }
