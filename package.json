@@ -8,12 +8,10 @@
     "consolidate": "^0.15.1",
     "ejs": "^3.0.2",
     "express": "^4.16.3",
-    "pug": "^2.0.3"
   },
   "devDependencies": {},
   "scripts": {
     "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
     "node": "12.13.0"
