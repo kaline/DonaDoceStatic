@@ -1,3 +1,3 @@
 # DonaDoceStatic
 
-<img src="imagens/cartao.jpg">
+<img src="imagens/Cartao.jpg">
