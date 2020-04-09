@@ -1,4 +1,4 @@
-# <p>&#128212; Dona Doce </p>
+# <p>&#129383; Dona Doce </p>
 ## Doceria remota de Fortaleza
 ***Version 1.0.0***
 
@@ -23,7 +23,6 @@
  ** <a href="https://www.elegantthemes.com/blog/resources/best-code-editors">Any editor you want!</a>
  * Download <a href="https://nodejs.org/">Nodejs</a> 
  * Deploy no <a href="https://www.heroku.com/">Heroku</a> 
-   <img src="public/imagens/doces.jpg">
 
 ---
 
