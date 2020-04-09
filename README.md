@@ -1,12 +1,12 @@
 # <p>&#129383; Dona Doce </p>
-## Doceria remota de Fortaleza
+## Sweet-shop from Fortaleza
 ***Version 1.0.0***
 
 <hr>
 <img src="public/imagens/Cartao.jpg">
 
 
-## 👀 O que é?
+## 👀 What's it?
 
 <p>
 	Uma simples aplicação web usando no frontend <a href="https://www.w3schools.com/html/">html</a>, <a href="https://www.w3schools.com/css/">css</a> e no backend <a href="https://nodejs.dev/">nodejs</a> para a exposição e solicitação de produtos de clientes da doceria <a href="https://donadoce.herokuapp.com/">Dona Doce</a>.
@@ -14,7 +14,7 @@
 
 ---
 
-## ✍ Como usar:
+## ✍ How to use:
 
  * Escolha um editor de texto de sua preferência:
  	* <a href="https://code.visualstudio.com/">Visual Studio Code</a>
