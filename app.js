@@ -20,7 +20,7 @@ app.post('/submit', (req,res)=> {
 })
 
 app.get('/', (req, res) => {
-    res.send('Seu pedido será entregue..' + clienteData)
+    res.send('Seu pedido será entregue..')
 
 
 })
