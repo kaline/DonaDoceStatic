@@ -5,12 +5,7 @@ var fs = require('fs')
 
 app.use(bodyParser.urlencoded({extended:true}))
 
-app.get('/app/:id', checkUserAuth); 
-function checkUserAuth(req, res, next){
-    if(req.session.user) return next();
-    return next(new NotAuthorizeError());
 
-}
 app.post('/submit', (req,res)=> {
     var clienteData = JSON.stringify(req.body);
     console.log('Dados do cliente:' + JSON.stringify(req.body))
@@ -22,6 +17,12 @@ app.post('/submit', (req,res)=> {
             console.log('Salva dados do cliente: clienteData.json');
         })
     })
+})
+
+app.get('/', (req, res) => {
+    res.send('Seu pedido será entregue..' + clienteData)
+
+
 })
 app.listen(process.env.PORT || 3000, function(){
     console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
