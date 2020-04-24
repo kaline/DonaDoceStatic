@@ -9,7 +9,7 @@
 ## 👀 What's it?
 
 <p>
-	This is a simple web application developed at frontend using <a href="https://www.w3schools.com/html/">html</a>, <a href="https://www.w3schools.com/css/">css</a> and backend <a href="https://nodejs.dev/">nodejs</a>.The goal is build a site to present the products to the clients of the sweet-shop and to request products<a href="https://donadoce.herokuapp.com/">Dona Doce</a>.
+	This is a simple web application developed at frontend using <a href="https://www.w3schools.com/html/">html</a>, <a href="https://www.w3schools.com/css/">css</a> and backend <a href="https://nodejs.dev/">nodejs</a>.The goal is build a site to present the products to the clients of the sweet-shop and to request products <a href="https://donadoce.herokuapp.com/">Dona Doce</a>.
 </p>
 
 ---
