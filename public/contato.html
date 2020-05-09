@@ -1,128 +1,218 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Contato - Dona Doce</title>
-        <link rel="stylesheet" href="reset.css">
-        <link  rel="stylesheet" href="produtos.css">
-        <link rel="stylesheet" href="contato.css">
-        
-    </head>
-    <body>
-        <header class="tituloPrimeiro">
-            <div class="caixa">
-                <h1><img id="logo" src="imagens/logo.png" alt="Logo da Dona Doce"></h1>
-                <nav>
-                    <ul>
-                        <li><a  href="index.html">Home</a></li>
-                            <li><a href="produtos.html">Produtos</a></li>
-                            <li><a href="contato.html">Contato</a></li>   
-                    </ul>
-                </nav>
-            </div>
-        </header>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contato - Dona Doce</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="produtos.css" />
+    <link rel="stylesheet" href="contato.css" />
 
-        <main class="contatoList">
-            <form class="contatoForm" action="https://donadoce.herokuapp.com/submit" method="POST">
-                    <label for="nome">Nome</label>
-                    <input type="nome" name="nome" id="nome" class="input-padrao"  required placeholder="Clarice Lispector">
-                
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" class="input-padrao" required placeholder="userId@dominio.com">
-                
-                    <label for="telefone">Telefone</label>
-                    <input type="telefone" name="telefone" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
 
-                    <label for="mensagem">Mensagem</label>
-                    <textarea cols="70" rows="20" type="mensagem" name="mensagem" id="mensagem" class="input-padrao"></textarea>
-                    <fieldset>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-                        <legend class="text">Como podemos te contatar?</legend>
-                        
-                        
-                        <label for="radio-email" >
-                            <input type="radio" name="opcaoContato" id="radioemail" value="email" checked>
-                            Email
-                        </label>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="tituloPrimeiro">
+      <div class="caixa">
+        <h1>
+          <img id="logo" src="imagens/logo.png" alt="Logo da Dona Doce" />
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="contatoList">
+      <form
+        class="contatoForm"
+        action="https://donadoce.herokuapp.com/submit"
+        method="POST"
+      >
+        <label for="nome">Nome</label>
+        <input
+          type="nome"
+          name="nome"
+          id="nome"
+          class="input-padrao"
+          required
+          placeholder="Clarice Lispector"
+        />
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="input-padrao"
+          required
+          placeholder="userId@dominio.com"
+        />
+
+        <label for="telefone">Telefone</label>
+        <input
+          type="telefone"
+          name="telefone"
+          id="telefone"
+          class="input-padrao"
+          required
+          placeholder="(XX) XXXXX-XXXX"
+        />
+
+        <label for="mensagem">Mensagem</label>
+        <textarea
+          cols="70"
+          rows="20"
+          type="mensagem"
+          name="mensagem"
+          id="mensagem"
+          class="input-padrao"
+        ></textarea>
+        <fieldset>
+          <legend class="text">Como podemos te contatar?</legend>
+
+          <label for="radio-email">
+            <input
+              type="radio"
+              name="opcaoContato"
+              id="radioemail"
+              value="email"
+              checked
+            />
+            Email
+          </label>
+
+          <label for="radio-telefone">
+            <input
+              type="radio"
+              name="opcaoContato"
+              id="radio-telefone"
+              value="telefone"
+            />
+            Telefone
+          </label>
+
+          <label for="radio-whatsApp">
+            <input
+              type="radio"
+              name="opcaoContato"
+              id="radio-whatsApp"
+              value="whatsApp"
+            />
+            WhatsApp
+          </label>
+        </fieldset>
+
+        <fieldset class="entrega">
+          <legend class="text">Qual o horário da entrega?</legend>
+          <select class="lista" name="horarioEntrega">
+            <option>Manhã</option>
+            <option>Tarde</option>
+            <option>Noite</option>
+          </select>
+        </fieldset>
+
+        <label class="checkbox"
+          ><input
+            class="inputCheck"
+            type="checkbox"
+            name="emailResposta"
+            checked
+          />Gostaria de receber atualizações por email?</label
+        >
+
+        <input
+          type="submit"
+          href="https://donadoce.herokuapp.com"
+          value="Enviar formulário"
+          class="enviar"
+        />
+      </form>
+
+      <table>
+        <thead>
+          <tr>
+            <td>Dia</td>
+            <td>Horário</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Segunda</td>
+            <td>7h ~ 21h</td>
+          </tr>
+          <tr>
+            <td>Terça</td>
+            <td>7h ~ 21h</td>
+          </tr>
+          <tr>
+            <td>Quarta</td>
+            <td>7h ~ 21h</td>
+          </tr>
+          <tr>
+            <td>Quinta</td>
+            <td>7h ~ 21h</td>
+          </tr>
+          <tr>
+            <td>Sexta</td>
+            <td>7h ~ 21h</td>
+          </tr>
+          <tr>
+            <td>Sábado</td>
+            <td>7h ~ 21h</td>
+          </tr>
+        </tbody>
+        <tfoot></tfoot>
+      </table>
+    </main>
+    <footer>
+        <section>
+            <a class="fa fa-google" href="mailto:donadocedelivery@gmail.com"></a>
+            <a
+              id="whatsapp"
+              href="https://api.whatsapp.com/send?phone=+55(85)99840-4443"
+            ></a>
+            <a
+              class="fa fa-instagram"
+              href="https://www.instagram.com/donadoce.br/"
+            ></a>
     
-                        <label for="radio-telefone">
-                            <input type="radio"  name="opcaoContato" id="radio-telefone"  value="telefone">
-                            Telefone
-                        </label>
-    
-                        <label for="radio-whatsApp">
-                            <input type="radio"  name="opcaoContato" id="radio-whatsApp"  value="whatsApp">
-                            WhatsApp
-                        </label>
-
-                    </fieldset>
-        
-                    <fieldset class="entrega">
-                        <legend class="text">Qual o horário da entrega?</legend>
-                        <select class="lista" name="horarioEntrega">
-                            <option>Manhã</option>
-                            <option>Tarde</option>
-                            <option>Noite</option>
-                        </select>
-                    </fieldset>
-                    
-                    <label class="checkbox"><input class="inputCheck" type="checkbox" name="emailResposta" checked>Gostaria de receber atualizações por email?</label>
-                   
-
-                    <input type="submit" href="https://donadoce.herokuapp.com" value="Enviar formulário" class="enviar">
-            </form>
-            
-            <table>
-                <thead>
-                    <tr>
-                        <td>Dia</td>
-                        <td>Horário</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Segunda</td>
-                        <td>7h ~ 21h</td>
-                    </tr>
-                    <tr>
-                        <td>Terça</td>
-                        <td>7h ~ 21h</td>
-                    </tr>
-                    <tr>
-                        <td>Quarta</td>
-                        <td>7h ~ 21h</td>
-                    </tr>
-                    <tr>
-                        <td>Quinta</td>
-                        <td>7h ~ 21h</td>
-                    </tr>
-                    <tr>
-                        <td>Sexta</td>
-                        <td>7h ~ 21h</td>
-                    </tr>
-                    <tr>
-                        <td>Sábado</td>
-                        <td>7h ~ 21h</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    
-                </tfoot>
-                
-            </table>
-           
-        </main>
-        <footer>
-            <section>
-                <A id="email" HREF="mailto:donadocedelivery@gmail.com"></A>
-                <A id="whatsapp" HREF="https://api.whatsapp.com/send?phone=+55(85)99840-4443"></A>
-                <A id="instagram" HREF="https://www.instagram.com/donadoce.br/"></A>
-            </section>
-            <section>
-                <img width="250px" height="250px" src="imagens/logo.png" alt="Logo da Dona Doce">
-                <p class="copyright">&copy; Copyright Dona Doce - 2020</p>
-            </section>
-           
-        </footer>
-    </body>
+            <a href="https://www.facebook.com/Dona-Doce-115175586848124/" class="fa fa-facebook"></a>
+          </section>
+      <section>
+        <img
+          width="250px"
+          height="250px"
+          src="imagens/logo.png"
+          alt="Logo da Dona Doce"
+        />
+        <p class="copyright">&copy; Copyright Dona Doce - 2020</p>
+      </section>
+    </footer>
+  </body>
 </html>

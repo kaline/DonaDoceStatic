@@ -1,81 +1,158 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Dona Doce</title>
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style.css">
-        <link  rel="stylesheet" href="produtos.css">
-        <link rel="stylesheet" href="contato.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Dona Doce</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="produtos.css" />
+    <link rel="stylesheet" href="contato.css" />
 
-        <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
-    </head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
 
-    <body>
-        <header>
-            <header class="tituloPrimeiro">
-                <div class="caixa">
-                    <h1><img id="logo" src="imagens/logo.png" alt="Logo da Dona Doce"></h1>
-                    <nav>
-                        <ul>
-                            <li><a  href="index.html">Home</a></li>
-                            <li><a href="produtos.html">Produtos</a></li>
-                            <li><a href="contato.html">Contato</a></li>    
-                        </ul>
-                    </nav>
-                </div>
-            </header>
-        </header>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-        <div>
-            <img  class="banner" src="imagens/banner.jpg">
-            <img  class="banner" src="imagens/banner (1).jpg">
-            <img  class="banner" src="imagens/banner (2).jpg">
-            <img  class="banner" src="imagens/banner (3).jpg">
-            <img  class="banner" src="imagens/banner (4).jpg">
-         </div>
-        <main>
-            <section class="Tituloprincipal">
-                <h2 class="TituloSobre">Sobre Dona Doce</h2>
-                <p class="texto"> A doceria <strong>Dona Doce</strong> está lozalizada na cidade de Fortaleza.Nós fazemos delivery de doces para você! </p>
-                <p id="missão"><em>Nossa missão é: <strong>alimentos frescos e práticos para qualquer ocasião.</strong></em></p>
-                <p class="texto">Faça já sua encomenda!</p>
-                <img  class="doces" src="imagens/brigadeirotradicional.jpg" alt="Imagem do texto Sobre"> 
-            </section>
-           <hr>
-            <section class="conteudo-beneficios">
-                <h2 id="tituloinf">Benfícios</h2>
-                <ul class="lista-beneficios">
-                <li class="itens">Atendimento aos clientes.</li>
-                <li class="itens">Qualidade dos produtos.</li>
-                <li class="itens">Entrega de encomendas.</li>
-                </ul>
-            </section>
-            <div class="video">
-                <p class="TituloSobre">Assista nosso trabalho</p>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/aPCSChilOKw" frameborder="0" allow="accelerometer; 
-               autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>    
-        </main>
-        <section class="mapa">
-            <h3 class="TituloSobre">Nossa doceria</h3>
-            <p>Veja onde pode nos encontrar!</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.1807608393924!2d-38.59368738588366!3d-3.770812844443959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74c7295bb0b0f%3A0xd4c02094b129c9f0!2sR.%20Isabel%20Bezerra%20-%20Jo%C3%A3o%20XXIII%2C%20Fortaleza%20-%20CE!5e0!3m2!1sen!2sbr!4v1586036742156!5m2!1sen!2sbr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        </section>
-        
-        <footer>
-            <section>
-                    <A id="email" HREF="mailto:donadocedelivery@gmail.com"></A>
-                    <A id="whatsapp" HREF="https://api.whatsapp.com/send?phone=+55(85)99840-4443"></A>
-                    <A id="instagram" HREF="https://www.instagram.com/donadoce.br/"></A>
-            </section>
-            <div>
-                <img width="250px" height="250px" src="imagens/logo.png" alt="Logo da Dona Doce">
-                <p class="copyright">&copy; Copyright Dona Doce - 2020</p>
-            </div>
-        </footer>
-    </body>    
-</html>    
-    
-   
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <header class="tituloPrimeiro">
+        <div class="caixa">
+          <h1>
+            <img id="logo" src="imagens/logo.png" alt="Logo da Dona Doce" />
+          </h1>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="produtos.html">Produtos</a></li>
+              <li><a href="contato.html">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </header>
+
+    <div class="img-thumbnail">
+      <div class="rounded">
+        <picture>
+          <img class="banner" src="imagens/banner.jpg" />
+          <img class="banner" src="imagens/banner (1).jpg" />
+          <img class="banner" src="imagens/banner (2).jpg" />
+          <img class="banner" src="imagens/banner (3).jpg" />
+          <img class="banner" src="imagens/banner (4).jpg" />
+        </picture>
+      </div>
+    </div>
+    <main>
+      <section class="Tituloprincipal">
+        <h2 class="TituloSobre">Sobre Dona Doce</h2>
+        <p class="texto">
+          A doceria <strong>Dona Doce</strong> está lozalizada na cidade de
+          Fortaleza.Nós fazemos delivery de doces para você!
+        </p>
+        <p id="missão">
+          <em
+            >Nossa missão é:
+            <strong
+              >alimentos frescos e práticos para qualquer ocasião.</strong
+            ></em
+          >
+        </p>
+        <p class="texto">Faça já sua encomenda!</p>
+        <img
+          class="doces"
+          src="imagens/brigadeirotradicional.jpg"
+          alt="Imagem do texto Sobre"
+        />
+      </section>
+      <hr />
+      <section class="conteudo-beneficios">
+        <h2 id="tituloinf">Benfícios</h2>
+        <ul class="lista-beneficios">
+          <li class="itens">Atendimento aos clientes.</li>
+          <li class="itens">Qualidade dos produtos.</li>
+          <li class="itens">Entrega de encomendas.</li>
+        </ul>
+      </section>
+      <div class="video">
+        <p class="TituloSobre">Assista nosso trabalho</p>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/aPCSChilOKw"
+          frameborder="0"
+          allow="accelerometer; 
+               autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </main>
+    <section class="mapa">
+      <h3 class="TituloSobre">Nossa doceria</h3>
+      <p>Veja onde pode nos encontrar!</p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.1807608393924!2d-38.59368738588366!3d-3.770812844443959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74c7295bb0b0f%3A0xd4c02094b129c9f0!2sR.%20Isabel%20Bezerra%20-%20Jo%C3%A3o%20XXIII%2C%20Fortaleza%20-%20CE!5e0!3m2!1sen!2sbr!4v1586036742156!5m2!1sen!2sbr"
+        width="600"
+        height="450"
+        frameborder="0"
+        style="border: 0;"
+        allowfullscreen=""
+        aria-hidden="false"
+        tabindex="0"
+      ></iframe>
+    </section>
+
+    <footer>
+      <section>
+        <a class="fa fa-google" href="mailto:donadocedelivery@gmail.com"></a>
+        <a
+          id="whatsapp"
+          href="https://api.whatsapp.com/send?phone=+55(85)99840-4443"
+        ></a>
+        <a
+          class="fa fa-instagram"
+          href="https://www.instagram.com/donadoce.br/"
+        ></a>
+
+        <a href="https://www.facebook.com/Dona-Doce-115175586848124/" class="fa fa-facebook"></a>
+      </section>
+      <div>
+        <img
+          width="250px"
+          height="250px"
+          src="imagens/logo.png"
+          alt="Logo da Dona Doce"
+        />
+        <p class="copyright">&copy; Copyright Dona Doce - 2020</p>
+      </div>
+    </footer>
+  </body>
+</html>

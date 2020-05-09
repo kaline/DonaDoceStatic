@@ -101,9 +101,9 @@ footer{
     margin: 20px 0 0;
 }
 @media screen and (max-width:480px){
-    .caixa, .tituloPrimeiro{
-        width: auto;
-        
+    footer, header{
+        width: 950px;
+        margin: 0;
     }
     h1{
         text-align: center;
@@ -113,4 +113,6 @@ footer{
     nav{
         position: static;
     }
+
+   
 }

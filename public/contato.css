@@ -59,27 +59,20 @@ tr td{
     border: 4px solid black;
     padding: 16px 30px;
 }
-#email{
-    text-decoration: none;
+
+.fa-google {
+    background: #dd4b39;
     color: white;
-    margin: 0 50px 0 0;
-}
-
-#email:before{
-    content: url('https://api.iconify.design/logos:google-gmail.svg?height=16');
-    vertical-align: -0.125em;
-    margin: 0 3px 0 0;
-
-}
-
+  }
+  
 #whatsapp{
     text-decoration:none;
     color: white;
     margin: 0 50px 0 0;
 }
 #whatsapp:before{
-    content: url('https://api.iconify.design/logos:whatsapp.svg?height=18');
-    vertical-align: -0.125em;
+    content: url('https://api.iconify.design/logos:whatsapp.svg?height=40');
+    vertical-align: -0.505em;
     margin: 0 3px 0 0;
 }
 
@@ -91,3 +84,26 @@ tr td{
     content: url('https://api.iconify.design/openmoji:instagram.svg?height=24');
     vertical-align: -0.325em;
 }
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  

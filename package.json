@@ -7,7 +7,7 @@
     "body-parser": "^1.18.3",
     "consolidate": "^0.15.1",
     "ejs": "^3.0.2",
-    "express": "^4.16.3",
+    "express": "^4.17.1",
     "pug": "^2.0.3"
   },
   "devDependencies": {},
