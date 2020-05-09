@@ -8,6 +8,7 @@
   text-align: center;
   background-color: white;
   font-style: italic;
+  font-weight: bold;
   font-size: 25px;
   margin: 40px 0 0 0;
 }
@@ -120,7 +121,7 @@ body {
     display: none;
     
   }
-  .TituloSobre, .texto, #missão, #tituloinf, .lista-beneficios, .mapa, .video {
+  .texto, #missão, #tituloinf, .lista-beneficios, .mapa, .video {
     text-align: center;
     width: 800px;
     margin: 50px;
