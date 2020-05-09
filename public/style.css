@@ -4,7 +4,7 @@
   font-style: italic;
 }
 
-.TituloSobre {
+.TituloSobreUm, .TituloSobre {
   text-align: center;
   background-color: white;
   font-style: italic;
@@ -121,7 +121,7 @@ body {
     display: none;
     
   }
-  .texto, #missão, #tituloinf, .lista-beneficios, .mapa, .video {
+  .TituloSobreUm, .texto, #missão, #tituloinf, .lista-beneficios, .mapa, .video {
     text-align: center;
     width: 800px;
     margin: 50px;
