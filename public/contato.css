@@ -1,11 +1,10 @@
 
 .contatoList {
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.contatoList{
-    width:940px;
-    margin:0 auto;
-}
+
 .contatoForm{
     margin:40px 0;
 }
@@ -50,7 +49,8 @@ form label, .text{
     transform: scale(1.2);
 }
 table{
-    margin: 20px 0 40px;
+    margin: 40px 0 40px;
+
 }
 thead td{
     background-color: lightgray;
