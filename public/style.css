@@ -206,3 +206,8 @@ footer div {
   padding: 20px;
   padding-top: 0px;
 }
+
+.iframe, iframe {
+  width: 100%;
+  
+}
