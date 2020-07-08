@@ -4,11 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Dona Doce</title>
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="produtos.css" />
-    <link rel="stylesheet" href="contato.css" />
 
+    <link rel="stylesheet" href="reset.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -40,13 +37,17 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="produtos.css" />
+    <link rel="stylesheet" href="contato.css" />
   </head>
 
   <body>
     <header>
       <header class="tituloPrimeiro">
         <div class="caixa">
-          <h1>
+          <h1 class>
             <img id="logo" src="imagens/logo.png" alt="Logo da Dona Doce" />
           </h1>
           <nav>
@@ -62,7 +63,7 @@
 
     <div class="img-thumbnail">
       <div class="rounded">
-        <picture>
+        <picture id="banner-group">
           <img class="banner" src="imagens/banner.jpg" />
           <img class="banner" src="imagens/banner (1).jpg" />
           <img class="banner" src="imagens/banner (2).jpg" />
@@ -104,15 +105,17 @@
       </section>
       <div class="video">
         <p class="TituloSobre">Assista nosso trabalho</p>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/aPCSChilOKw"
-          frameborder="0"
-          allow="accelerometer; 
-               autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+        <div class="iframe">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/aPCSChilOKw"
+            frameborder="0"
+            allow="accelerometer; 
+                 autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
     </main>
     <section class="mapa">
@@ -130,18 +133,12 @@
       ></iframe>
     </section>
 
+
     <footer>
       <section>
         <a class="fa fa-google" href="mailto:donadocedelivery@gmail.com"></a>
-        <a
-          id="whatsapp"
-          href="https://api.whatsapp.com/send?phone=+55(85)99840-4443"
-        ></a>
-        <a
-          class="fa fa-instagram"
-          href="https://www.instagram.com/donadoce.br/"
-        ></a>
-
+        <a class="fa fa-whatsapp" href="https://api.whatsapp.com/send?phone=+55(85)99840-4443"></a>
+        <a class="fa fa-instagram"    href="https://www.instagram.com/donadoce.br/"></a>
         <a href="https://www.facebook.com/Dona-Doce-115175586848124/" class="fa fa-facebook"></a>
       </section>
       <div>

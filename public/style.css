@@ -1,3 +1,9 @@
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
 .TituloPrincipal {
   background-color: white;
   border-style: outset;
@@ -11,6 +17,7 @@
   font-weight: bold;
   font-size: 25px;
   margin: 40px 0 0 0;
+  padding: 10px;
 }
 
 .texto {
@@ -26,11 +33,62 @@
   color: rgb(37, 20, 20);
   margin: 0mm;
 }
+.tituloPrimeiro{
+  background-color: rgb(34, 30, 30);
+  padding:30px 0;
+  font-style: oblique;
+}
+#logo{
+  width: 400px;
+}
+
+nav {
+  flex: 1 ;
+} 
+nav ul{
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  height: 100%;
+  align-items: center;
+  justify-content: end;
+}
+nav li{
+  
+  flex: 1;
+  text-align: center;
+}
+nav a{
+  text-transform: uppercase;
+  color: rgb(250, 242, 242);
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+}
+.caixa {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.caixa h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#banner-group {
+  display: flex;
+  width: 100%;
+}
+
 .banner {
   /* width: 100%; */
   width: 19.5%;
   border-width: 0;
   margin: 0mm;
+  flex: 1;
 }
 .banner:hover {
   border: outset rgb(196, 187, 195);
@@ -64,22 +122,8 @@
   margin: 40px 0 10px 0;
   clear: left;
 }
-nav {
-  position: center;
-}
-nav li {
-  display: inline;
-  margin: 0 0 0 100px;
-}
-nav a {
-  color: black;
-  text-decoration: none;
-  font-size: 20px;
-  font-style: italic;
-  font-weight: bold;
-}
+
 nav a:hover {
-  font-size: 20px;
   color: rosybrown;
 }
 
@@ -99,7 +143,7 @@ nav a:active {
   opacity: 1;
 }
 body {
-  font-family: "Courgette", cursive;
+  
   margin: 0 10px 0 0;
 }
 .mapa {
@@ -111,31 +155,18 @@ body {
   margin: 20px;
 }
 .video {
-  text-align: center;
-  margin: 100px 0 100px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
-  
 
-@media screen and (max-width: 480px) {
-  .banner{
-    display: none;
-    
-  }
-  .TituloSobreUm, .texto, #missão, #tituloinf, .lista-beneficios, .mapa, .video {
-    text-align: center;
-    width: 800px;
-    margin: 50px;
-    font-size: 1.2rem;
-  }
+.video .TituloSobre {
+  flex: 1;
+ }
 
-  nav {
-    position: static;
-  }
 
-  footer, header{
-      width: 800px;
-  }
-}
 @include media-breakpoint-up(sm) {
   html {
     font-size: 1.2rem;
@@ -152,4 +183,31 @@ body {
   html {
     font-size: 1.6rem;
   }
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  background:url("imagens/logo.png");
+  opacity: 0.7;
+  background-size: contain;
+  background-repeat: round;
+  justify-content: space-around;
+  align-items: center;
+  text-align:center
+}
+
+footer section {
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+footer div {
+  padding: 20px;
+  padding-top: 0px;
+}
+
+.iframe, iframe {
+  width: 100%;
+  
 }

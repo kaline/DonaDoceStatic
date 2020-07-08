@@ -1,7 +1,10 @@
-.contatoList{
-    width:940px;
-    margin:0 auto;
+
+.contatoList {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
 .contatoForm{
     margin:40px 0;
 }
@@ -46,7 +49,8 @@ form label, .text{
     transform: scale(1.2);
 }
 table{
-    margin: 20px 0 40px;
+    margin: 40px 0 40px;
+
 }
 thead td{
     background-color: lightgray;
@@ -88,22 +92,26 @@ tr td{
 .fa {
     padding: 20px;
     font-size: 30px;
-    width: 50px;
+    width: 65px;
     text-align: center;
     text-decoration: none;
-  }
-  
-  /* Add a hover effect if you want */
-  .fa:hover {
-    opacity: 0.7;
-  }
+}
 
-  .fa-facebook {
+  /* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-whatsapp {
+    background: forestgreen;
+    color: white;
+}
+
+.fa-facebook {
     background: #3B5998;
     color: white;
-  }
-  .fa-instagram {
+}
+.fa-instagram {
     background: #125688;
     color: white;
-  }
-  
+}

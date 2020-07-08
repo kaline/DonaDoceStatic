@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <title>Contato - Dona Doce</title>
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="produtos.css" />
-    <link rel="stylesheet" href="contato.css" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Dona Doce</title>
 
+    <link rel="stylesheet" href="reset.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -14,7 +13,14 @@
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -31,21 +37,27 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="produtos.css" />
+    <link rel="stylesheet" href="contato.css" />
   </head>
   <body>
-    <header class="tituloPrimeiro">
-      <div class="caixa">
-        <h1>
-          <img id="logo" src="imagens/logo.png" alt="Logo da Dona Doce" />
-        </h1>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="produtos.html">Produtos</a></li>
-            <li><a href="contato.html">Contato</a></li>
-          </ul>
-        </nav>
-      </div>
+    <header>
+      <header class="tituloPrimeiro">
+        <div class="caixa">
+          <h1 class>
+            <img id="logo" src="imagens/logo.png" alt="Logo da Dona Doce" />
+          </h1>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="produtos.html">Produtos</a></li>
+              <li><a href="contato.html">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
     </header>
 
     <main class="contatoList">
@@ -152,9 +164,7 @@
           value="Enviar formulário"
           class="enviar"
         />
-      </form>
-
-      <table>
+        <table>
         <thead>
           <tr>
             <td>Dia</td>
@@ -189,22 +199,18 @@
         </tbody>
         <tfoot></tfoot>
       </table>
+      </form>
+
+      
     </main>
     <footer>
-        <section>
-            <a class="fa fa-google" href="mailto:donadocedelivery@gmail.com"></a>
-            <a
-              id="whatsapp"
-              href="https://api.whatsapp.com/send?phone=+55(85)99840-4443"
-            ></a>
-            <a
-              class="fa fa-instagram"
-              href="https://www.instagram.com/donadoce.br/"
-            ></a>
-    
-            <a href="https://www.facebook.com/Dona-Doce-115175586848124/" class="fa fa-facebook"></a>
-          </section>
       <section>
+        <a class="fa fa-google" href="mailto:donadocedelivery@gmail.com"></a>
+        <a class="fa fa-whatsapp" href="https://api.whatsapp.com/send?phone=+55(85)99840-4443"></a>
+        <a class="fa fa-instagram"    href="https://www.instagram.com/donadoce.br/"></a>
+        <a href="https://www.facebook.com/Dona-Doce-115175586848124/" class="fa fa-facebook"></a>
+      </section>
+      <div>
         <img
           width="250px"
           height="250px"
@@ -212,7 +218,7 @@
           alt="Logo da Dona Doce"
         />
         <p class="copyright">&copy; Copyright Dona Doce - 2020</p>
-      </section>
+      </div>
     </footer>
   </body>
 </html>
