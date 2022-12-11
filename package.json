@@ -4,10 +4,10 @@
   "description": "<hr>\r <img src=\"imagens/Cartao.jpg\">",
   "main": "app.js",
   "dependencies": {
-    "body-parser": "^1.18.3",
+    "body-parser": "^1.20.1",
     "consolidate": "^0.15.1",
     "ejs": "^3.0.2",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "pug": "^2.0.3"
   },
   "devDependencies": {},
